@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "boj-api": {
+      "command": "python",
+      "args": ["/ABSOLUTE/PATH/TO/boj-mcp/server.py"],
+      "env": {}
+    }
+  }
+}
