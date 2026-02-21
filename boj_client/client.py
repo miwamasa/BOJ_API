@@ -268,7 +268,7 @@ class BOJClient:
         raw = self._get(url, params)
         self._check_status(raw)
 
-        series_list = raw.get("DATA", {}).get("SERIES", [])
+        series_list = raw.get("RESULTSET", [])
         return [SeriesMeta.from_api_dict(s, db=db) for s in series_list]
 
     def search_metadata(self, *, db: str, keyword: str) -> list[SeriesMeta]:
